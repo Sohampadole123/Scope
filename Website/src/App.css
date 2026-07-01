@@ -1,0 +1,79 @@
+/* App-specific styles */
+/* Base styles (scroll-behavior, ::selection) are in index.css — not duplicated here */
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #ff6b35;
+  outline-offset: 2px;
+}
+
+/* Skip to main content — accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #ff6b35;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Recharts tooltip customization */
+.recharts-tooltip-wrapper {
+  z-index: 100 !important;
+}
+
+/* Slider customization */
+[data-slot="slider-track"] {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-slot="slider-range"] {
+  background: #ff6b35 !important;
+}
+
+[data-slot="slider-thumb"] {
+  background: #ff6b35 !important;
+  border-color: #ff6b35 !important;
+}
+
+/* Switch customization */
+[data-slot="switch"] {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-slot="switch"][data-state="checked"] {
+  background: #ff6b35 !important;
+}
+
+/* Dialog customization */
+[data-slot="dialog-content"] {
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Tabs customization */
+[data-slot="tabs-list"] {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-slot="tabs-trigger"][data-state="active"] {
+  background: #ff6b35 !important;
+  color: white !important;
+}
+
+/* Tooltip customization */
+[data-slot="tooltip-content"] {
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}

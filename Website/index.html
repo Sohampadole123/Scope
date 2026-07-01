@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re-ID System — AI-Powered Multi-Camera Person Tracking</title>
+    <meta name="description" content="Advanced AI-powered multi-camera person re-identification system with real-time cross-camera tracking, 99.2% accuracy, and unlimited camera support." />
+    <meta name="theme-color" content="#ff6b35" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Re-ID System — Persistent Identity Tracking Across Cameras" />
+    <meta property="og:description" content="Advanced multi-camera person re-identification system maintaining consistent identity matching across unlimited camera feeds in real-time." />
+    <meta property="og:image" content="/hero-bg.jpg" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <!-- Font Preloading — loaded via <link> instead of CSS @import for non-blocking behavior -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+
+    <!-- Video Preloading (start downloading before user scrolls to Live Demo) -->
+    <link rel="preload" href="/vid1.mp4" as="video" type="video/mp4" />
+    <link rel="preload" href="/vid2.mp4" as="video" type="video/mp4" />
+    <link rel="preload" href="/vid3.mp4" as="video" type="video/mp4" />
+    <link rel="preload" href="/vid4.mp4" as="video" type="video/mp4" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Re-ID System",
+      "applicationCategory": "SecurityApplication",
+      "description": "AI-powered multi-camera person re-identification system with real-time cross-camera tracking and 99.2% accuracy.",
+      "operatingSystem": "Cross-platform",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Page loading screen (replaced by React on hydration) -->
+      <div id="page-loader" style="position:fixed;inset:0;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;z-index:9999;transition:opacity 0.5s ease">
+        <div style="width:48px;height:48px;border-radius:50%;border:3px solid rgba(255,107,53,0.15);border-top-color:#ff6b35;animation:loader-spin 0.8s linear infinite"></div>
+        <div style="font-family:system-ui,-apple-system,sans-serif;color:rgba(255,255,255,0.5);font-size:13px;letter-spacing:3px;text-transform:uppercase">Re-ID System</div>
+      </div>
+      <style>@keyframes loader-spin{to{transform:rotate(360deg)}}</style>
+    </div>
+    <noscript>
+      <div style="position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center;z-index:99999;padding:2rem">
+        <div style="text-align:center;color:#fff;font-family:system-ui,sans-serif;max-width:400px">
+          <h1 style="font-size:1.5rem;margin-bottom:1rem;color:#ff6b35">JavaScript Required</h1>
+          <p style="color:rgba(255,255,255,0.6);line-height:1.6">The Re-ID System interface requires JavaScript to run. Please enable JavaScript in your browser settings and reload this page.</p>
+        </div>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
